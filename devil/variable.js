@@ -37,14 +37,27 @@ name = "moon"
 이건 불가
 */
 
-/* var는 함수 스코프 
+/* var는 함수 스코프(식별자에 대한 유효범위) 
+
+if(age>19){
+  var txt = "성인"
+}
+console.log(txt)   성인 출력가능
+
+fucntion add(a,b){
+  var result = a+b
+}
+console.log(result) 에러 !!! var는 함수 스코프이기 때문에!!!!
+
+
 let, const 는 블록 스코프 
 -function add(){
-  block scope
-}
-  
--if(){
-  block scope
+block scope
 }
 
-  */
+-if(){
+block scope
+}
+
+{} 내에서만 사용 가능하다
+*/
