@@ -55,6 +55,7 @@ userStorage.loginUser(
   id,
   password,
   (user) => {
+    console.log(user);
     userStorage.getRoles(
       user,
       (userwithRole) => {
